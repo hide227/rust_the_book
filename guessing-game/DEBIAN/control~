@@ -1,0 +1,7 @@
+Package: guessing_game
+Version: 0.1.0
+Section: utils
+Priority: optional
+Architecture: arm64
+Maintainer: hide227 <dummy@example.com>
+Description: Rust lang tutorial
