@@ -23,7 +23,7 @@ deb: build
 	cp target/release/$(PKG_NAME) $(DEBROOT)/usr/local/bin/
 	chmod 755 $(DEBROOT)/usr/local/bin/$(PKG_NAME)
 
-	dpkg-deb --build $(DEBROOT) $(PKG_NAME)_$(VERSION).deb
+	fakeroot dpkg-deb --build $(DEBROOT) $(PKG_NAME)_$(VERSION).deb
 
 .PHONY: clean
 clean:
